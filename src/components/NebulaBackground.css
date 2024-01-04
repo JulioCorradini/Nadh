@@ -6,24 +6,25 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: nebulaAnimation 20s infinite alternate;
+    animation: nebulaAnimation 10s infinite;
+    background: radial-gradient(circle, #8e44ad, #6410eb);
   }
   
   @keyframes nebulaAnimation {
     0% {
-      background: #8e44ad;
+      opacity: 0.7; /* Inicialmente menos opacidad para un inicio más suave */
     }
     25% {
-      background: #3498db;
+      opacity: 1; /* Aumento de la opacidad */
     }
     50% {
-      background: #e74c3c;
+      opacity: 0.7; /* Reducción de la opacidad */
     }
     75% {
-      background: #2ecc71;
+      opacity: 1; /* Aumento de la opacidad */
     }
     100% {
-      background: #f39c12;
+      opacity: 0.7; /* Reducción de la opacidad */
     }
-  }
+}
   

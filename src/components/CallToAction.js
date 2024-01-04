@@ -1,12 +1,13 @@
 // CallToAction.js
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import './CallToAction.css'
 
 const CallToAction = () => {
   return (
     <div className="cta-container">
-      <Button variant="primary" size="lg">
-        ¡Regístrate ahora!
+      <Button className= "button" variant="primary" size="lg">
+        Conocer Más
       </Button>
     </div>
   );

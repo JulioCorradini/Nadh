@@ -1,0 +1,12 @@
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta según sea necesario para ocupar la altura completa de la pantalla */
+  }
+
+.button {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}

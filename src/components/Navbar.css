@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilos para el enlace del logotipo */
+  .navbar-brand {
+    font-size: 1.5rem; /* Ajusta según sea necesario */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .nav-link {
+    color: white; /* Cambia el color del texto según sea necesario */
+    margin-right: 15px; /* Espaciado entre enlaces */
+  }
+  
+  /* Ajustar otros estilos según sea necesario */
+  
