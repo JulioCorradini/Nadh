@@ -1,0 +1,23 @@
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.text-content{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:  rgba(192, 26, 26, 0.5);
+    animation: animacion 2s infinite alternate-reverse
+}
+
+@keyframes animacion {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

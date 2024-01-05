@@ -5,12 +5,15 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ImageCarousel from './components/ImageCarousel';
 import SubjectIcons from './components/SubjectIcons';
 import NebulaBackground from './components/NebulaBackground';
+import Text from './components/Text';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className='app-container'>
       <NebulaBackground />
       <NavigationBar />
+      <Text />
       <CallToAction />
       <WhatsAppButton />
       <ImageCarousel />
