@@ -1,35 +1,29 @@
 // NebulaBackground.js
 
-import React, { useEffect } from 'react'; 
+//import React, { useEffect } from 'react'; 
+import React, { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import  { loadFull } from 'tsparticles';
+import particlesConfig from './config/particles-config';
 import './NebulaBackground.css';
-import Particles from 'particles.js';
 
 const NebulaBackground = () => {
 
-  useEffect(() => {
+  const particlesInit = useCallback((engine)=>{
+    loadFull(engine)
+  }, [])
 
-    // Configurar los parámetros de particles.js
-    Particles('nebula-background', {
-      particles: {
-        number: {
-          value: 80,
-        },
-        size: {
-          value: 3,
-        },
-      },
-      interactivity: {
-        events: {
-          onhover: {
-            enable: true,
-            mode: 'repulse',
-          },
-        },
-      },
-    });
-  }, []);
+  return(
+    <div className="nebula-background">
+      <Particles 
+        options={ particlesConfig }
+        init={ particlesInit }
+      />
+    </div>
+  )
 
-  return <div className="nebula-background"></div>;
+  //return <div className="nebula-background"></div>;
+
 };
 
 export default NebulaBackground;

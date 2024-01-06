@@ -1,5 +1,5 @@
 /* NebulaBackground.css */
-.nebula-background {
+/*.nebula-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,19 +12,23 @@
   
   @keyframes nebulaAnimation {
     0% {
-      opacity: 0.7; /* Inicialmente menos opacidad para un inicio más suave */
+      opacity: 0.7;
     }
     25% {
-      opacity: 1; /* Aumento de la opacidad */
+      opacity: 1;
     }
     50% {
-      opacity: 0.7; /* Reducción de la opacidad */
+      opacity: 0.7;
     }
     75% {
-      opacity: 1; /* Aumento de la opacidad */
+      opacity: 1;
     }
     100% {
-      opacity: 0.7; /* Reducción de la opacidad */
+      opacity: 0.7;
     }
+}*/
+.nebula-background {
+  background-color: aqua;
+  z-index: 1;
 }
   

@@ -1,6 +1,14 @@
 /* styles.css */
 
 /* Estilos para la barra de navegación */
+.navbar-div{
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
