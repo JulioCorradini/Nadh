@@ -4,6 +4,7 @@
     align-items: center;
     height: 10vh; /* Ajusta según sea necesario para ocupar la altura completa de la pantalla */
     width: 210vh;
+    position: absolute;
   }
 
 .button {
