@@ -1,28 +1,24 @@
+/*WhatsAppButton*/
+
 .whatsapp-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-.whatsapp-container.hovered {
-transform: scale(1.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-20px);
-    }
-    60% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .whatsapp-container.clicked {
-    animation: bounce 0.5s;
-  }
+.immage {
+  transition: transform 0.2s ease-in-out;
+}
+
+.immage:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.immage:active {
+  transform: scale(0.9);
+}
+
   

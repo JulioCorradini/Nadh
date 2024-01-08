@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Ajusta según sea necesario para ocupar la altura completa de la pantalla */
+    height: 10vh;
     width: 210vh;
     z-index: 1;
   }

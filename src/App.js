@@ -30,6 +30,7 @@ import ParticlesBackground from "./components/ParticlesBackground";
 import NavigationBar from './components/Navbar';
 import Text from './components/Text';
 import CallToAction from './components/CallToAction';
+import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
       <NavigationBar />
       <Text />
       <CallToAction />
+      <WhatsAppButton />
     </div>
   )
 

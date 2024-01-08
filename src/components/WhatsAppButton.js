@@ -1,28 +1,27 @@
 // WhatsAppButton.js
+
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
-import "./WhatsAppButton.css";
+import './WhatsAppButton.css'
+import whasAppLogo from "../WhatsApp.png";
 
 const WhatsAppButton = () => {
-  const [isHovered, setIsHovered] = useState(false);
+
   const [isClicked, setIsClicked] = useState(false);
 
   const handleWhatsAppClick = () => {
     setIsClicked(true);
     setTimeout(() => setIsClicked(false), 500);
-    window.location.href = "...";
+    //window.location.href = "...";
+    console.log("click");
   };
 
   return (
-    <div className={`whatsapp-container${isHovered ? 'hovered' : ''} ${isClicked ? 'clicked' : ''}`} 
-    onClick={handleWhatsAppClick}
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
-    >
-      <img src="../src/WhatsApp.svg"  alt="WhatsApp" with={40} height={40} />
+    <div className='whatsapp-container' onClick={handleWhatsAppClick}>
+      <img className='immage' src={ whasAppLogo }  alt="WhatsApp" with={60} height={60} />
     </div>
   );
 };
 
 export default WhatsAppButton;
+
