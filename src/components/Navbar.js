@@ -6,7 +6,6 @@ import './Navbar.css';
 
 const NavigationBar = () => {
   return (
-    <div className='navbar-div'>
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#">Nadh</Navbar.Brand>
         <Nav className="ml-auto">
@@ -16,7 +15,6 @@ const NavigationBar = () => {
           <Nav.Link >Contacto</Nav.Link>
         </Nav>
       </Navbar>
-    </div>
 
     // Este script asegura un suave desplazamiento al hacer clic en los enlaces del Navbar
     /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {

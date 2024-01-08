@@ -7,7 +7,7 @@
     height: 100%;
     z-index: -1;
     animation: nebulaAnimation 10s infinite;
-    background: radial-gradient(circle, #8e44ad, #6410eb);
+    background: radial-gradient(circle, #8e44ad, #0414e7);
   }
   
   @keyframes nebulaAnimation {
