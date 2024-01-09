@@ -4,6 +4,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './ImageCarousel.css';
+import image_1 from "../image-1.jpg";
+import image_2 from "../image-2.jpg";
+import image_3 from "../image-3.jpg";
 
 const ImageCarousel = () => {
   const settings = {
@@ -15,18 +18,20 @@ const ImageCarousel = () => {
   };
 
   const images = [
-    // Add your image URLs here
+    image_1,
+    image_2,
+    image_3
   ];
 
   return (
     <div className='image-corousel-container'>
-      <Slider {...settings}>
+      <Slider {...settings} className='slider'>
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+            <img className= "image" src={image} alt={`Slide ${index + 1}`} />
           </div>
         ))}
-      </Slider>
+        </Slider>
     </div>
   );
 };
