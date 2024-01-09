@@ -28,7 +28,7 @@ export default App;*/
 import React from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
 import NavigationBar from './components/Navbar';
-import ImageCarousel from './components/ImageCarousel';
+import Image from './components/Image';
 import Text from './components/Text';
 import CallToAction from './components/CallToAction';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -40,7 +40,7 @@ const App = () => {
     <div className='app-container'>
       <ParticlesBackground />
       <NavigationBar />
-      <ImageCarousel />
+      <Image />
       <Text />
       <CallToAction />
       <WhatsAppButton />
