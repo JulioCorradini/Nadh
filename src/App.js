@@ -31,7 +31,9 @@ import NavigationBar from './components/Navbar';
 import Image from './components/Image';
 import Text from './components/Text';
 import CallToAction from './components/CallToAction';
+import SubjectIcons from './components/SubjectIcons';
 import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
@@ -43,7 +45,9 @@ const App = () => {
       <Image />
       <Text />
       <CallToAction />
+      <SubjectIcons />
       <WhatsAppButton />
+      <Footer />
     </div>
   )
 

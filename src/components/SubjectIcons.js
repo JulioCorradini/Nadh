@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalculator, faBook, faFlask } from '@fortawesome/free-solid-svg-icons';
-
+import './Subjecticons.css';
 
 const SubjectIcons = () => {
   const subjects = [
