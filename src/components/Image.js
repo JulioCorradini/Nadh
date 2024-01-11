@@ -5,7 +5,13 @@ import image from "../image.jpg";
 
 const Image = () => {
   return (
-    <div className='image-container'>
+    <div className='principal-container'>
+      <div className='image-container-blue'>
+        
+      </div>
+      <div className='image-container-red'>
+        
+        </div>
       <img className={'image-content'} src={ image } alt={`Image`} />
     </div>
   );
