@@ -1,37 +1,31 @@
 // SubjectIcons.js
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalculator, faBook, faFlask } from '@fortawesome/free-solid-svg-icons';
+
+import React from 'react';
+import mathIcon from '../icons/MathIcon.png';
+import biologyIcon from '../icons/BiologyIcon.png';
+import chemistryIcon from '../icons/ChemistryIcon.png';
 import './Subjecticons.css';
 
 const SubjectIcons = () => {
+
   const subjects = [
-    { description: 'Matemáticas', icon: <FontAwesomeIcon icon={faCalculator} />  },
-    { description: 'Lenguaje', icon: <FontAwesomeIcon icon={faBook} /> },
-    { description: 'Ciencias', icon: <FontAwesomeIcon icon={faFlask} /> },
-    // Add more subjects as needed
+    { name: 'Matemáticas', icon: mathIcon, description: 'Descripción de Matemáticas...' },
+    { name: 'Biología', icon: biologyIcon, description: 'Descripción de Biología...' },
+    { name: 'Química', icon: chemistryIcon, description: 'Descripción de Química...' },
+    { name: 'Física' },
+    { name: 'Historia' }
   ];
 
-  const [selectedSubject, setSelectedSubject] = useState(null);
-
-  const handleSubjectClick = (index) => {
-    setSelectedSubject(index === selectedSubject ? null : index);
-  };
-
   return (
-    <div className="subject-icons-container">
-      {subjects.map((subject, index) => (
-        <div
-          key={index}
-          className={`subject-icon ${index === selectedSubject ? 'active' : ''}`}
-          onClick={() => handleSubjectClick(index)}
-        >
-          {subject.icon}
-          {index === selectedSubject && <p>{subject.description}</p>}
+    <div className='array-subjects-container'>
+      {subjects.map((item, index)=>(
+        <div key={index} className={`subject-container-${index}`}>
+          {item.name}
         </div>
       ))}
     </div>
   );
+
 };
 
 export default SubjectIcons;
