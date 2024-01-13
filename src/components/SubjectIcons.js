@@ -13,7 +13,9 @@ const SubjectIcons = () => {
     { name: 'Biología', icon: biologyIcon, description: 'Descripción de Biología...' },
     { name: 'Química', icon: chemistryIcon, description: 'Descripción de Química...' },
     { name: 'Física' },
-    { name: 'Historia' }
+    { name: 'Historia' },
+    { name: 'Fisicoquímica' },
+    { name: 'Gramática' }
   ];
 
   return (
