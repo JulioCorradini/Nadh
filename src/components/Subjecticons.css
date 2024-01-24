@@ -14,10 +14,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 5px;
     width: 30%;
-    height: 40%;
+    height: 40vh;
     background-color: rgb(250, 245, 245);
     padding: 5px;
 }
-  
+
+[class^="icon-"] {
+  transition: transform 0.2s ease-in-out;
+}
+
+[class^="icon-"]:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+[class^="icon-"]:active {
+  transform: scale(0.9);
+}
+
+[class^= "description-"] {
+  display: none;
+}
+
+.description-show {
+  display: block;
+}

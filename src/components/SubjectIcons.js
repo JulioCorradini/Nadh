@@ -12,17 +12,23 @@ const SubjectIcons = () => {
     { name: 'Matemáticas', icon: mathIcon, description: 'Descripción de Matemáticas...' },
     { name: 'Biología', icon: biologyIcon, description: 'Descripción de Biología...' },
     { name: 'Química', icon: chemistryIcon, description: 'Descripción de Química...' },
-    { name: 'Física' },
-    { name: 'Historia' },
-    { name: 'Fisicoquímica' },
-    { name: 'Gramática' }
   ];
+
+  function showDescription (iconClassName) {
+
+    const iconDescription = document.getElementsByClassName(iconClassName);
+
+    iconDescription.classList.add('description-show');
+
+  }
 
   return (
     <div className='array-subjects-container'>
       {subjects.map((item, index)=>(
         <div key={index} className={`subject-container-${index}`}>
-          {item.name}
+          <img className={`icon-${item.name}`} src={item.icon} alt={`icon-${item.name}`} width={60} height={60} onClick={showDescription (`description-${item.name}`)}/>
+          <p className={`name-${item.name}`}> {item.name} </p>
+          <p className={`description-${item.name}`}> {item.description} </p>
         </div>
       ))}
     </div>
