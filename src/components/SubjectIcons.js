@@ -1,6 +1,6 @@
 // SubjectIcons.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import mathIcon from '../icons/MathIcon.png';
 import biologyIcon from '../icons/BiologyIcon.png';
 import chemistryIcon from '../icons/ChemistryIcon.png';
@@ -14,21 +14,19 @@ const SubjectIcons = () => {
     { name: 'Química', icon: chemistryIcon, description: 'Descripción de Química...' },
   ];
 
-  function showDescription (iconClassName) {
+  const [activeDescription, setActiveDescription] = useState(null);
 
-    const iconDescription = document.getElementsByClassName(iconClassName);
-
-    iconDescription.classList.add('description-show');
-
+  const showDescription = (index) => {
+    setActiveDescription(index);
   }
 
   return (
     <div className='array-subjects-container'>
       {subjects.map((item, index)=>(
         <div key={index} className={`subject-container-${index}`}>
-          <img className={`icon-${item.name}`} src={item.icon} alt={`icon-${item.name}`} width={60} height={60} onClick={showDescription (`description-${item.name}`)}/>
+          <img className={`icon-${item.name}`} src={item.icon} alt={`icon-${item.name}`} width={60} height={60} onClick={() => showDescription(index)} />
           <p className={`name-${item.name}`}> {item.name} </p>
-          <p className={`description-${item.name}`}> {item.description} </p>
+          <p className={`description-${item.name} ${activeDescription === index ? 'description-show' : ''}`}> {item.description} </p>
         </div>
       ))}
     </div>

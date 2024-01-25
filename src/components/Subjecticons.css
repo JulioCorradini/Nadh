@@ -36,9 +36,13 @@
 }
 
 [class^= "description-"] {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
 .description-show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
