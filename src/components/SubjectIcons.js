@@ -20,8 +20,10 @@ const SubjectIcons = () => {
     setActiveDescription(index);
   }
 
+  const containerHeight = activeDescription !== null ? 'auto' : '';
+
   return (
-    <div className='array-subjects-container'>
+    <div className={'array-subjects-container'} style={{ height: containerHeight }}>
       {subjects.map((item, index)=>(
         <div key={index} className={`subject-container-${index}`}>
           <img className={`icon-${item.name}`} src={item.icon} alt={`icon-${item.name}`} width={60} height={60} onClick={() => showDescription(index)} />

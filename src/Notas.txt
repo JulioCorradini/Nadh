@@ -1,0 +1,28 @@
+-Terminar el componente Subjecticons ******
+    
+    -Lograr que el div contenedor cambie su altura de forma gradual.
+    -Mejorar los estilos.
+
+-Terminar el componente Footer
+
+        -Agregar los íconos de las redes sociales y su funcionalidad de redirección
+
+-Cambiar el componente que tiene la foto para que no tenga la animación de colores
+
+-Hacer que el texto aparezca por sobre el componente con la foto
+
+-Agregar la funcionalidad para que los links del Navbar redirigan a las distintas secciones de la página
+
+-Agregrar la funcionalidad de redirección del botón de WhatsApp
+
+-Ver si se puede agregar una sección con la ubicación en el mapa
+
+-Agregar el logo de Nadh
+
+-Modificar la configuración del efecto de partículas
+
+-Revisar la administración de recursos para que la página tenga buena respuesta
+
+-Revisar la responsividad de la página para otros dispositivos
+
+-Darle estilos a todos los textos de cada componente

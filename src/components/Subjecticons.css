@@ -9,6 +9,7 @@
     width: 100%;
     background-color: rgb(87, 23, 148);
     z-index: 2;
+    transition: height 0.5s ease-in-out;
   }
 
 [class^="subject-container-"] {
@@ -22,6 +23,8 @@
     /*background-color: rgb(250, 245, 245);*/
     padding: 5px;
 }
+
+
 
 [class^="icon-"] {
   transition: transform 0.2s ease-in-out;
@@ -37,14 +40,13 @@
 }
 
 [class^= "description-"] {
-  visibility: hidden;
+  display: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
+  transition: display 0s, opacity 0.5s ease-in-out;
   bottom: 0;
 }
 
 .description-show {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
